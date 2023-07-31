@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header{
+    margin: 0;
+    padding: 10px 10px;
+    background-color: #171718;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family:  'DM Sans', sans-serif;
+    border-bottom: 1px solid #353434;
+   
+}
+
+header .header_logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    cursor: pointer;
+
+}
+.logo_title{
+    font-family:  sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+header nav ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+header nav ul li{
+
+    cursor: pointer;
+    list-style: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+a {
+	position: relative;
+	color: white; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color:  #5C62EC;
+  ; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.4s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+
+ /* Здесь будут все стили для устройств с viewport больше 1400 пикселей. */
+
+ @media (max-width: 1400px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей,
+    но больше 990 пикселей.
+    Эти стили будут использованы для планшетов и ноутбуков с низким разрешением
+    */
+  }
+
+  @media (max-width: 990px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей,
+    но больше 770 пикселей.
+    Эти стили подойдут для некоторых мобильных устройств и планшетов
+    */
+  }
+
+  @media (max-width: 770px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+  }
+
+  @media (max-width: 650px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+    header{
+        margin: 0;
+        padding: 10px 1px;
+        background-color: #171718;
+        color: white;
+        font-family:  'DM Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+  }

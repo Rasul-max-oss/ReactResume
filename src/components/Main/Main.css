@@ -1,0 +1,80 @@
+main{
+    padding:0;
+    margin: 0;
+    background-color: 
+    #171718;
+    width: 100%;
+    height: 600px;
+    padding-top:20px;
+}
+.main_container{
+    padding-top: 20px;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: url('./Abstract.png');
+}
+.main_title_container{
+    width: 100%;
+    margin-top:130px;
+}
+.main_title_container h1{
+    font-family:  'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: white;
+
+}
+.main_title_container h1 span{
+  color: #5C62EC;
+
+}
+.main_title_container  p {
+    font-family:  'DM Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 1400px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 1400 пикселей,
+    но больше 990 пикселей.
+    Эти стили будут использованы для планшетов и ноутбуков с низким разрешением
+    */
+  }
+
+  @media (max-width: 990px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей,
+    но больше 770 пикселей.
+    Эти стили подойдут для некоторых мобильных устройств и планшетов
+    */
+  }
+
+  @media (max-width: 770px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+  }
+
+  @media (max-width: 580px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */ .main_container{
+        width: 70%;
+        padding-top: 0;
+    }
+
+}

@@ -1,0 +1,31 @@
+
+.footer_flex{
+    padding-top: 65px;
+    margin-top: 65px;
+    background-color: #171718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_flex_icons{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.footer_flex_icons img{
+   cursor: pointer;
+
+}
+.footer_flex_text {
+    margin-top: 20px;
+}
+.footer_flex_text p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: white;
+}
